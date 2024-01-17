@@ -24,6 +24,10 @@ and paste the following lines::
 
   download.file("https://github.com/Genentech/midasHLA/blob/11bde30cbbf11b34f2dea29a6284371a9c1e9440/data/allele_frequencies.rda?raw=true", "allele_frequencies.csv")
 
+Third, vg pangenome index should be downloaded from with::
+
+  wget https://s3-us-west-2.amazonaws.com/human-pangenomics/pangenomes/freeze/freeze1/minigraph-cactus/hprc-v1.0-mc-grch38.xg
+
 Then the following three steps are carried out. Note that each step is bound to the outputs coming from the previous steps. The file and folder names are given for exemplary purposes to get the grasp of haplotype quantification easier.
 
 Candidate variant generation
@@ -40,7 +44,7 @@ Preprocessing
 
 Second step is the preprocessing of reads which includes alignment of reads to genome and calling by Varlociraptor. This step has to be carried out for the locus of interest using the corresponding VCF file produced during candidate variant generation. The following command accomplishes this task and produces a BCF file for e.g. locus A::
 
-      orthanq preprocess hla --genome <genome> --haplotype-variants candidate_variants/A.vcf --output preprocessing/reads_A.bcf --reads reads_1.fq reads_2.fq
+      orthanq preprocess hla --genome <genome> --haplotype-variants candidate_variants/A.vcf --output preprocessing/reads_A.bcf --reads reads_1.fq reads_2.fq --vg-index hprc-v1.0-mc-grch38.xg
 
 
 Calling
