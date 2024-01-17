@@ -42,7 +42,8 @@ Above command produces VCF files for each HLA locus (A.vcf, B.vcf, C.vcf, DQB1.v
 Preprocessing
 -----------------
 
-Second step is the preprocessing of reads which includes alignment of reads to genome and calling by Varlociraptor. This step has to be carried out for the locus of interest using the corresponding VCF file produced during candidate variant generation. The following command accomplishes this task and produces a BCF file for e.g. locus A::
+Second step is the preprocessing of reads which includes alignment of reads to genome and calling by Varlociraptor. It firstly creates a BWA index using the reference genome. Secondly, the reads are aligned to the genome using the index and reads aligned to HLA loci are extracted and converted to FASTQ. Thirdly, the reads are aligned to the prebuilt pangenome index that was downloaded previously. Then, the extracted reads are aligned to the pangenome graph using ``vg giraffe``. Finally, the aligned BAM file is set to further processing for the header and Varlociraptor is used to call the variants.
+This step has to be carried out for the locus of interest using the corresponding VCF file produced during candidate variant generation. The following command accomplishes this task and produces a BCF file for e.g. locus A::
 
       orthanq preprocess hla --genome reference.fasta --haplotype-variants candidate_variants/A.vcf --output preprocessing/reads_A.bcf --reads reads_1.fq reads_2.fq --vg-index hprc-v1.0-mc-grch38.xg
 
