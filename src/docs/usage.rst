@@ -50,4 +50,4 @@ The third and last step is the quantification of HLA haplotypes for e.g. locus A
 
       orthanq call hla --haplotype-variants candidate_variants/A.vcf --output quantification/reads_A.csv --prior diploid --haplotype-calls preprocessing/reads_A.bcf --xml hla.xml 
 
-Above command looks quantifies haplotypes assuming the sample is a normal healthy sample via the chosen prior as diploid. However, if haplotype quantification is carried out for a tumor sample, then 'uniform' prior has to be chosen.
+Above command quantifies haplotypes assuming the sample is a normal healthy sample via the chosen prior as diploid. So it's so called **HLA typing** in the clinical context. However, if haplotype quantification is carried out for a tumor sample, then 'uniform' prior has to be chosen.
