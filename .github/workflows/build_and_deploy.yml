@@ -3,7 +3,7 @@ name: build-and-deploy
 on:
   push:
     branches:
-      - master
+      - main
   workflow_dispatch:
 
 permissions:
@@ -27,5 +27,5 @@ jobs:
       - name: locosopa
         uses: koesterlab/locosopa@main
         with:
-          config: config.yaml
+          config: src/config.yaml
           path: build
