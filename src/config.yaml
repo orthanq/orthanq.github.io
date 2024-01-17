@@ -1,12 +1,12 @@
 project:
-  name: Snakemake
-  copyright: 2024, The Snakemake Team
-  authors: Johannes Koester
+  name: Orthanq
+  copyright: 2024, Koesterlab
+  authors: Hamdiye Uzuner, Johannes Koester
 
 color: orange
 logo:
-  dark: logo-snake.svg
-  light: logo-snake.svg
+  dark: logo.svg # add a logo
+  light: logo.svg # add a logo
 
 repo: 
   name: orthanq/orthanq
@@ -25,7 +25,7 @@ header:
       url: https://x.com/johanneskoester
 
 hero:
-  img: logo_light.svg
+  img: logo-hero.svg # add a logo
   statements:
     - some catchy statement
   links: []
