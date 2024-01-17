@@ -24,7 +24,7 @@ and paste the following lines::
 
   download.file("https://github.com/Genentech/midasHLA/blob/11bde30cbbf11b34f2dea29a6284371a9c1e9440/data/allele_frequencies.rda?raw=true", "allele_frequencies.csv")
 
-Third, vg pangenome index should be downloaded from with::
+Third, vg pangenome index should be downloaded with::
 
   wget https://s3-us-west-2.amazonaws.com/human-pangenomics/pangenomes/freeze/freeze1/minigraph-cactus/hprc-v1.0-mc-grch38.xg
 
