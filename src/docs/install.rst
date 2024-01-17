@@ -1,7 +1,7 @@
 Installation
 ======================================================
 
-Latest Orthand release is downloaded from the corresponding GitHub `repository`_.
+Latest Orthanq release is downloaded from the corresponding GitHub `repository`_.
 
 .. _repository: https://github.com/orthanq/orthanq/releases
 
