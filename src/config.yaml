@@ -1,5 +1,6 @@
 project:
   name: Orthanq
+  version: 0.1.0
   copyright: 2024, Koesterlab
   authors: Hamdiye Uzuner, Johannes Koester
 
