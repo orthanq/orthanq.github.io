@@ -1,0 +1,43 @@
+project:
+  name: Snakemake
+  copyright: 2024, The Snakemake Team
+  authors: Johannes Koester
+
+color: orange
+logo:
+  dark: logo-snake.svg
+  light: logo-snake.svg
+
+repo: 
+  name: orthanq/orthanq
+  contributors:
+    skip:
+      - github-actions[bot]
+      - dependabot[bot]
+
+header:
+  links:
+    - text: Github
+      url: https://github.com/orthanq
+    - text: Mastodon
+      url: https://fosstodon.org/@johanneskoester
+    - text: X
+      url: https://x.com/johanneskoester
+
+hero:
+  img: logo_light.svg
+  statements:
+    - some catchy statement
+  links: []
+
+features:
+  # see https://github.com/snakemake/snakemake.github.io/
+  - title: Some feature or property
+    desc: |
+      some text
+    img: report.png # name of image in src folder
+    url: # url to link to
+
+docs:
+  src: docs
+  sidebar-links: []
