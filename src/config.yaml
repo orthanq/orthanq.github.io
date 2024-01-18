@@ -28,7 +28,7 @@ header:
 hero:
   img: logo.svg # add a logo
   statements:
-    - some catchy statement
+    - Uncertainty aware haplotype quantification at subclone resolution
   links: []
 
 features:
