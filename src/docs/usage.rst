@@ -16,13 +16,9 @@ Then, the xml file has to be unzipped using::
 
   unzip hla.xml.zip
 
-Second, allele frequency table is downloaded using R. For that to happen, open a terminal and type::
+Second, allele frequency table is downloaded using R. For that to happen, open a terminal and paste the following lines::
 
-  R
-
-and paste the following lines::
-
-  download.file("https://github.com/Genentech/midasHLA/blob/11bde30cbbf11b34f2dea29a6284371a9c1e9440/data/allele_frequencies.rda?raw=true", "allele_frequencies.csv")
+  R -e 'download.file("https://github.com/Genentech/midasHLA/blob/11bde30cbbf11b34f2dea29a6284371a9c1e9440/data/allele_frequencies.rda?raw=true", "allele_frequencies.csv")'
 
 Third, vg pangenome index should be downloaded with::
 
