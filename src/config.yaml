@@ -26,19 +26,23 @@ header:
       url: https://x.com/johanneskoester
 
 hero:
-  img: logo-hero.svg # add a logo
+  img: logo.svg # add a logo
   statements:
-    - some catchy statement
+    - Uncertainty aware haplotype quantification at subclone resolution
   links: []
 
 features:
   # see https://github.com/snakemake/snakemake.github.io/
-  - title: Some feature or property
+  - title: Transparency and diagnostics
     desc: |
-      some text
-    img: report.png # name of image in src folder
-    url: # url to link to
-
+      With Orthanq, it is possible to track the contribuiton of variants to the model decision by diagnostic plots.
+    img: final_solution.png # name of image in src folder
+    url: https://orthanq.github.io/docs/index.html
+  - title: HLA typing as an application
+    desc: |
+      With Orthanq, HLA typing is carried out both for normal and tumor samples. With tumor samples, high resolution of haplotype quantification is achieved at subclonal levels.
+    img: solutions.png # name of image in src folder
+    url: https://orthanq.github.io/docs/index.html
 docs:
   src: docs
   sidebar-links: []
