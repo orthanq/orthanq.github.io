@@ -37,7 +37,7 @@ features:
     desc: |
       With Orthanq, it is possible to track the contribuiton of variants to the model decision by diagnostic plots.
     img: final_solution.png # name of image in src folder
-    url: https://datavzrd.github.io/docs/index.html
+    url: https://orthanq.github.io/docs/index.html
   - title: HLA typing as an application
     desc: |
       With Orthanq, HLA typing is carried out both for normal and tumor samples. With tumor samples, high resolution of haplotype quantification is achieved at subclonal levels.
