@@ -42,7 +42,7 @@ features:
     desc: |
       With Orthanq, HLA typing is carried out both for normal and tumor samples. With tumor samples, high resolution of haplotype quantification is achieved at subclonal levels.
     img: solutions.png # name of image in src folder
-    url: https://datavzrd.github.io/docs/index.html
+    url: https://orthanq.github.io/docs/index.html
 docs:
   src: docs
   sidebar-links: []
