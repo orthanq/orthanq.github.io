@@ -26,7 +26,7 @@ header:
       url: https://x.com/johanneskoester
 
 hero:
-  img: orthang-white.svg # add a logo
+  img: orthanq-white.svg # add a logo
   statements:
     - Uncertainty aware haplotype quantification at subclone resolution
   links: []
