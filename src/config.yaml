@@ -6,7 +6,7 @@ project:
 
 color: orange
 logo:
-  dark: orthang-logo-white.svg # add a logo
+  dark: orthanq-logo-white.svg # add a logo
   light: orthanq-logo-black.svg # add a logo
 
 repo: 
