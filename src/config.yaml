@@ -6,8 +6,8 @@ project:
 
 color: orange
 logo:
-  dark: logo.svg # add a logo
-  light: logo.svg # add a logo
+  dark: orthang-logo-white.svg # add a logo
+  light: orthanq-logo-black.svg # add a logo
 
 repo: 
   name: orthanq/orthanq
@@ -26,7 +26,7 @@ header:
       url: https://x.com/johanneskoester
 
 hero:
-  img: logo.svg # add a logo
+  img: orthang-white.svg # add a logo
   statements:
     - Uncertainty aware haplotype quantification at subclone resolution
   links: []
