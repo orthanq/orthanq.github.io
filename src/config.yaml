@@ -48,9 +48,9 @@ features:
     url: https://en.wikipedia.org/wiki/Human_leukocyte_antigen
   - title: HLA Typing
     desc: |
-      HLA typing is the process of determining the HLA alleles of each HLA locus/gene of a given sample.
+      HLA typing is the process of determining the HLA alleles of each HLA locus/gene of a given sample (image from: https://hla.alleles.org)
     img: naming.png
-    url: https://orthanq.github.io/docs/index.html
+    url: https://hla.alleles.org/nomenclature/naming.html
   - title: Transparency and diagnostics
     desc: |
       With Orthanq, it is possible to track the contribuiton of variants to the model decision by diagnostic plots.
