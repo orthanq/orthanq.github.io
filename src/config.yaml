@@ -49,6 +49,7 @@ features:
   - title: HLA Typing
     desc: |
       HLA typing is the process of determining the HLA alleles of each HLA locus/gene of a given sample (image from: https://hla.alleles.org)
+      An application of haplotype quantification with Orthanq is HLA typing.
     img: naming.png
     url: https://hla.alleles.org/nomenclature/naming.html
   - title: Transparency and diagnostics
