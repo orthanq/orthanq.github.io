@@ -33,10 +33,12 @@ hero:
 
 features:
   # see https://github.com/snakemake/snakemake.github.io/
-  - title: Haplotype quantification
+  - title: Haplotype quantification with Orthanq
     desc: |
+      Orthanq is a framework for quantifying haplotypes from DNA sequencing (exome or whole genome) data.
       A haplotype is a biological entity that carries genetic information to be inherited from a single chromosome of same parental origin.
       It can represent a set of single nucleotide polymorphisms (SNPs) or alleles.
+      With the concept of HLA haplotypes in mind, Orthanq's functionality can be used to perform HLA typing.
     img: haplotype_quant.png
     url: https://orthanq.github.io/docs/index.html
   - title: Human Leukocyte Antigen (HLA)
