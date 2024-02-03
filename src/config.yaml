@@ -48,7 +48,7 @@ features:
       HLA genes show a relatively high genomic variability and this variability plays a major role in the activation of specific cells of the adaptive immune system in the context of infection, cancer and autoimmunity. 
     img: hla.png
     url: https://en.wikipedia.org/wiki/Human_leukocyte_antigen
-  - title: HLA Typing
+  - title: HLA Typing as Haplotype Quantification
     desc: |
       HLA typing is the process of determining the HLA alleles of each HLA locus/gene of a given sample (image from: https://hla.alleles.org)
       An application of haplotype quantification with Orthanq is HLA typing.
@@ -56,7 +56,7 @@ features:
     url: https://hla.alleles.org/nomenclature/naming.html
   - title: Transparency and diagnostics
     desc: |
-      With Orthanq, it is possible to track the contribuiton of variants to the model decision by diagnostic plots.
+      With Orthanq, it is possible to track the contribution of variants to the model decision by diagnostic plots.
     img: final_solution.png # name of image in src folder
     url: https://orthanq.github.io/docs/index.html
 docs:
