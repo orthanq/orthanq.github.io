@@ -29,7 +29,9 @@ hero:
   img: orthanq-white.svg # add a logo
   statements:
     - Uncertainty aware haplotype quantification at subclone resolution
-  links: []
+  links:
+    - text: Read the preprint
+      url: https://www.researchsquare.com/article/rs-3910990/v1
 
 features:
   # see https://github.com/snakemake/snakemake.github.io/
