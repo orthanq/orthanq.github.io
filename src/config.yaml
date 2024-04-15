@@ -6,8 +6,8 @@ project:
 
 color: orange
 logo:
-  dark: logo.svg # add a logo
-  light: logo.svg # add a logo
+  dark: orthanq-logo-white.svg # add a logo
+  light: orthanq-logo-black.svg # add a logo
 
 repo: 
   name: orthanq/orthanq
@@ -26,23 +26,42 @@ header:
       url: https://x.com/johanneskoester
 
 hero:
-  img: logo.svg # add a logo
+  img: orthanq-white.svg # add a logo
   statements:
     - Uncertainty aware haplotype quantification at subclone resolution
-  links: []
+  links:
+    - text: Read the preprint
+      url: https://www.researchsquare.com/article/rs-3910990/v1
 
 features:
   # see https://github.com/snakemake/snakemake.github.io/
+  - title: Haplotype quantification with Orthanq
+    desc: |
+      Orthanq is a framework for quantifying haplotypes from DNA sequencing (exome or whole genome) data.
+      A haplotype is a biological entity that carries genetic information to be inherited from a single chromosome of same parental origin.
+      It can represent a set of single nucleotide polymorphisms (SNPs) or alleles.
+      With the concept of HLA haplotypes in mind, Orthanq's functionality can be used to perform HLA typing.
+    img: haplotype_quant.png
+    url: https://orthanq.github.io/docs/index.html
+  - title: Human Leukocyte Antigen (HLA)
+    desc: |
+      The human leukocyte antigen (HLA) system (also known as major histocompatibility complex (MHC)), located in the short arm of chromosome 6, a set of genes playing a central role in the immune system.
+      The HLA system consists of three main classes, HLA-I, HLA-II and HLA-III.
+      HLA genes show a relatively high genomic variability and this variability plays a major role in the activation of specific cells of the adaptive immune system in the context of infection, cancer and autoimmunity. 
+    img: hla.png
+    url: https://en.wikipedia.org/wiki/Human_leukocyte_antigen
+  - title: HLA Typing as Haplotype Quantification
+    desc: |
+      HLA typing is the process of determining the HLA alleles of each HLA locus/gene of a given sample.
+      An application of haplotype quantification with Orthanq is HLA typing.
+      (image credit: https://hla.alleles.org)
+    img: naming.png
+    url: https://hla.alleles.org/nomenclature/naming.html
   - title: Transparency and diagnostics
     desc: |
-      With Orthanq, it is possible to track the contribuiton of variants to the model decision by diagnostic plots.
+      With Orthanq, it is possible to track the contribution of variants to the model decision by diagnostic plots.
     img: final_solution.png # name of image in src folder
     img-width: min(30vw, 550px)
-    url: https://orthanq.github.io/docs/index.html
-  - title: HLA typing as an application
-    desc: |
-      With Orthanq, HLA typing is carried out both for normal and tumor samples. With tumor samples, high resolution of haplotype quantification is achieved at subclonal levels.
-    img: solutions.png # name of image in src folder
     url: https://orthanq.github.io/docs/index.html
 docs:
   src: docs
