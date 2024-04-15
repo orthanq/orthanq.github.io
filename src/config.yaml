@@ -61,6 +61,7 @@ features:
     desc: |
       With Orthanq, it is possible to track the contribution of variants to the model decision by diagnostic plots.
     img: final_solution.png # name of image in src folder
+    img-width: min(30vw, 550px)
     url: https://orthanq.github.io/docs/index.html
 docs:
   src: docs
