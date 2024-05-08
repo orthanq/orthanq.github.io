@@ -29,7 +29,6 @@ For HLA typing, we do not recommend to use a genome that contains ALT contigs. P
 
 Finally, the following three steps are carried out. Note that each step is bound to the outputs coming from the previous steps. The file and folder names are given for exemplary purposes to get the grasp of haplotype quantification easier.
 
-
 Candidate variant generation
 -----------------
 
