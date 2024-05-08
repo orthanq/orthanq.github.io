@@ -24,7 +24,11 @@ Third, vg pangenome index should be downloaded with::
 
   wget https://s3-us-west-2.amazonaws.com/human-pangenomics/pangenomes/freeze/freeze1/minigraph-cactus/hprc-v1.0-mc-grch38.xg
 
-Then the following three steps are carried out. Note that each step is bound to the outputs coming from the previous steps. The file and folder names are given for exemplary purposes to get the grasp of haplotype quantification easier.
+Lastly, reference genome in fasta format should be downloaded.
+For HLA typing, we do not recommend to use a genome that contains ALT contigs. Please use a reference genome with no ALT contigs i.e. it could be a primary assembly from either Ensembl or UCSC.
+
+Finally, the following three steps are carried out. Note that each step is bound to the outputs coming from the previous steps. The file and folder names are given for exemplary purposes to get the grasp of haplotype quantification easier.
+
 
 Candidate variant generation
 -----------------
