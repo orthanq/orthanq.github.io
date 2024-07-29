@@ -30,8 +30,8 @@ hero:
   statements:
     - Uncertainty aware haplotype quantification at subclone resolution
   links:
-    - text: Read the preprint
-      url: https://www.researchsquare.com/article/rs-3910990/v1
+    - text: Read the paper
+      url: https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-024-05832-4
 
 features:
   # see https://github.com/snakemake/snakemake.github.io/
