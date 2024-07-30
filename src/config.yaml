@@ -27,7 +27,8 @@ header:
 
 hero:
   img:
-    dark: orthanq-white.svg # add a logo
+    dark: orthanq-white.svg
+    light: orthanq-white.svg
   statements:
     - Uncertainty aware haplotype quantification at subclone resolution
   links:
