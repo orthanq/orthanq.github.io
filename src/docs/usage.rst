@@ -36,7 +36,7 @@ First step in haplotype quantification is the generation of candidate variants u
 
       orthanq candidates hla --allele-freq allele_frequencies.csv --alleles hla_gen.fasta --genome reference.fasta --xml hla.xml --output candidate_variants
 
-Above command produces VCF files for each HLA locus (A.vcf, B.vcf, C.vcf, DQB1.vcf) in candidate_variants folder.
+Above command produces VCF files for each HLA locus (A.vcf, B.vcf, C.vcf, DQB1.vcf) in the respective folder.
 
 Preprocessing
 -----------------
