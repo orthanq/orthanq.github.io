@@ -79,3 +79,28 @@ In the final step, virus variant quantification is performed based on the haplot
 
       orthanq call hla --haplotype-variants out/candidates.vcf --prior uniform --haplotype-calls out/preprocessed.bcf --output quantification 
 
+Interpretation of Results
+======================================================
+
+HLA quantification
+********
+
+HLA quantification creates a file in the provided output folder and generates the following files:
+
+- predictions: All predictions with all solutions and posterior estimates (`predictions.csv`)
+- three_field_solutions: Best 10 solutions created with the prediction results (`3_field_solutions.json`)
+- two_field_solutions: Best 10 solutions created with the prediction results, on the 2-field-resolution (`2_field_solutions.json`)
+- best_solution: Best solution plot containing a barchart with solution, genotype and locus matrices, and a violin plot showing the allele frequency distribution (`best_solution.json`)
+- lp_solution: LP solution plot containing a barchart with solution & genotype and locus matrices (`lp_solution.json`)
+- two_field_table: All predictions with all solutions and posterior estimates on the 2-field resolution. (`2-field.csv`)
+- g_groups= All predictions with correspondng G groups (`G_groups.csv`)
+
+Note: HLA types having no G group has `None` in the haplotype field.
+
+Note 2: All JSON files can be converted to `SVG` using `vl2svg` (https://anaconda.org/conda-forge/vega-lite-cli).
+
+
+Virus lineage quantification
+********
+
+(coming soon)
