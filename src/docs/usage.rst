@@ -93,7 +93,7 @@ HLA quantification creates a file in the provided output folder and generates th
 - best_solution: Best solution plot containing a barchart with solution, genotype and locus matrices, and a violin plot showing the allele frequency distribution (`best_solution.json`)
 - lp_solution: LP solution plot containing a barchart with solution & genotype and locus matrices (`lp_solution.json`)
 - two_field_table: All predictions with all solutions and posterior estimates on the 2-field resolution. (`2-field.csv`)
-- g_groups= All predictions with correspondng G groups (`G_groups.csv`)
+- G_groups: All predictions with correspondng G groups (`G_groups.csv`)
 
 Note: HLA types having no G group has `None` in the haplotype field.
 
