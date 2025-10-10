@@ -79,6 +79,7 @@ In the final step, virus variant quantification is performed based on the haplot
 
       orthanq call hla --haplotype-variants out/candidates.vcf --prior uniform --haplotype-calls out/preprocessed.bcf --output quantification 
 
+
 Interpretation of Results
 ======================================================
 
