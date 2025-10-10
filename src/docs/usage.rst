@@ -12,29 +12,25 @@ HLA quantification is carried out in 3 steps. Before starting, some files have t
   wget ftp://ftp.ebi.ac.uk/pub/databases/ipd/imgt/hla/hla_gen.fasta
   wget ftp://ftp.ebi.ac.uk/pub/databases/ipd/imgt/hla/xml/hla.xml.zip
 
-Then, the xml file has to be unzipped using::
+The xml file has to be unzipped using::
 
   unzip hla.xml.zip
 
-Second, allele frequency table is downloaded using R. For that to happen, open a terminal and paste the following lines::
-
-  R -e 'download.file("https://github.com/Genentech/midasHLA/blob/11bde30cbbf11b34f2dea29a6284371a9c1e9440/data/allele_frequencies.rda?raw=true", "allele_frequencies.rda"); load("allele_frequencies.rda"); write.csv(allele_frequencies, file="allele_frequencies.csv")'
-
-Third, vg pangenome index should be downloaded with::
+Vg pangenome index should be downloaded with::
 
   wget https://s3-us-west-2.amazonaws.com/human-pangenomics/pangenomes/freeze/freeze1/minigraph-cactus/hprc-v1.0-mc-grch38.xg
 
-Lastly, reference genome in fasta format should be downloaded.
+Reference genome in fasta format should be downloaded.
 For HLA typing, we do not recommend to use a genome that contains ALT contigs. Please use a reference genome with no ALT contigs i.e. it could be a primary assembly from either Ensembl or UCSC.
 
-Finally, the following three steps are carried out. Note that each step is bound to the outputs coming from the previous steps. The file and folder names are given for exemplary purposes to get the grasp of haplotype quantification easier.
+The following three steps are carried out. Note that each step is bound to the outputs coming from the previous steps. The file and folder names are given for exemplary purposes to get the grasp of haplotype quantification easier.
 
-Candidate variant generation
+Generation of haplotype variants
 -----------------
 
-First step in haplotype quantification is the generation of candidate variants using HLA alleles and a reference genome using the following command::
+First step in haplotype quantification is the generation of haplotype variants using HLA alleles and a reference genome using the following command::
 
-      orthanq candidates hla --allele-freq allele_frequencies.csv --alleles hla_gen.fasta --genome reference.fasta --xml hla.xml --output candidate_variants
+      orthanq candidates hla --alleles hla_gen.fasta --genome reference.fasta --xml hla.xml --output candidate_variants
 
 Above command produces VCF files for each HLA locus (A.vcf, B.vcf, C.vcf, DQB1.vcf) in candidate_variants folder.
 
@@ -46,6 +42,9 @@ This step has to be carried out for the locus of interest using the correspondin
 
       orthanq preprocess hla --genome reference.fasta --haplotype-variants candidate_variants/A.vcf --output preprocessing/reads_A.bcf --reads reads_1.fq reads_2.fq --vg-index hprc-v1.0-mc-grch38.xg
 
+Note: To reduce runtime, you can provide a pre-built BWA index using the --bwa-index option.
+
+Note 2: If you already have BWA-aligned reads, you can use the --bam-input parameter to further decrease runtime.
 
 Calling
 -----------------
@@ -55,3 +54,28 @@ The third and last step is the quantification of HLA haplotypes for e.g. locus A
       orthanq call hla --haplotype-variants candidate_variants/A.vcf --output quantification/reads_A.csv --prior diploid --haplotype-calls preprocessing/reads_A.bcf --xml hla.xml 
 
 Above command quantifies haplotypes assuming the sample is a normal healthy sample via the chosen prior as diploid. So it's so called **HLA typing** in the clinical context. However, if haplotype quantification is carried out for a tumor sample, then 'uniform' prior has to be chosen.
+
+Virus Variant Quantification
+********
+
+Generation of haplotype variants
+-----------------
+
+The first step in virus variant quantification is generating haplotype variants. This involves using known virus lineages, strains, or variants alongside a reference genome. Use the following command::
+
+      orthanq candidates virus --lineages hla_gen.fasta --genome reference.fasta --output out/candidates.vcf
+
+Preprocessing
+-----------------
+
+The second step involves read alignment to the reference genome and variant calling using Varlociraptor::
+
+      orthanq preprocess hla --genome reference.fasta --haplotype-variants  out/candidates.vcf --output out/preprocessed.bcf --reads reads_1.fq reads_2.fq
+
+Quantification
+-----------------
+
+In the final step, virus variant quantification is performed based on the haplotype calls::
+
+      orthanq call hla --haplotype-variants out/candidates.vcf --prior uniform --haplotype-calls out/preprocessed.bcf --output quantification 
+
