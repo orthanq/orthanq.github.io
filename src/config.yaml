@@ -32,8 +32,10 @@ hero:
   statements:
     - Uncertainty aware haplotype quantification at subclone resolution
   links:
-    - text: Read the paper
+    - text: Read the HLA typing paper
       url: https://doi.org/10.1186/s12859-024-05832-4
+    - text: Read the virus paper
+      url: https://doi.org/10.1186/s12859-026-06387-2
 
 features:
   # see https://github.com/snakemake/snakemake.github.io/
